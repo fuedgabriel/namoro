@@ -1,0 +1,204 @@
+body {
+    background-color: #fff0f5; /* Lavender Blush */
+    font-family: 'Dancing Script', cursive;
+    text-align: center;
+    color: #a0522d; /* Sienna */
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 4em;
+    margin-top: 20px;
+}
+
+.counter {
+    background-color: #ffe4e1; /* Misty Rose */
+    padding: 20px;
+    border-radius: 15px;
+    margin: 20px 0;
+}
+
+.counter h2 {
+    font-size: 2.5em;
+}
+
+#timeCounter {
+    font-size: 2em;
+}
+
+.date-input {
+    margin: 20px 0;
+}
+
+.date-input label {
+    font-size: 1.5em;
+    margin-right: 10px;
+}
+
+.date-input input[type="date"] {
+    font-size: 1em;
+    padding: 10px;
+    border: 2px solid #a0522d;
+    border-radius: 10px;
+    background-color: #fffaf0; /* Floral White */
+    margin-right: 10px;
+}
+
+.btn {
+    font-size: 1em;
+    padding: 10px 20px;
+    background-color: #ff69b4; /* Hot Pink */
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-family: 'Dancing Script', cursive;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.btn:hover {
+    background-color: #ff1493; /* Deep Pink */
+    transform: scale(1.05);
+}
+
+.upload-section {
+    margin: 40px 0;
+}
+
+.upload-section h2 {
+    font-size: 2em;
+}
+
+.upload-section input[type="file"] {
+    font-size: 1em;
+    padding: 10px;
+    border: 2px solid #a0522d;
+    border-radius: 10px;
+    background-color: #fffaf0;
+    margin-top: 10px;
+}
+
+#gallery {
+    position: relative;
+    width: 100%;
+    height: 800px; /* Aumentar altura para acomodar mais imagens */
+    margin-top: 20px;
+}
+
+#gallery img {
+    position: absolute;
+    border: 5px solid #fff;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    /* Efeito de colagem */
+    transform: rotate(var(--rotation)) scale(1);
+    transition: transform 0.5s;
+}
+
+#gallery img:hover {
+    transform: rotate(var(--rotation)) scale(1.1);
+    z-index: 1;
+}
+
+/* Posicionamento das imagens para criar a colagem */
+#gallery img:nth-child(1) {
+    top: 20px;
+    left: 5%;
+    --rotation: -10deg;
+}
+
+#gallery img:nth-child(2) {
+    top: 60px;
+    left: 25%;
+    --rotation: 8deg;
+}
+
+#gallery img:nth-child(3) {
+    top: 100px;
+    left: 45%;
+    --rotation: -5deg;
+}
+
+#gallery img:nth-child(4) {
+    top: 140px;
+    left: 65%;
+    --rotation: 5deg;
+}
+
+#gallery img:nth-child(5) {
+    top: 180px;
+    left: 85%;
+    --rotation: -8deg;
+}
+
+#gallery img:nth-child(6) {
+    top: 220px;
+    left: 10%;
+    --rotation: 10deg;
+}
+
+#gallery img:nth-child(7) {
+    top: 260px;
+    left: 30%;
+    --rotation: -7deg;
+}
+
+#gallery img:nth-child(8) {
+    top: 300px;
+    left: 50%;
+    --rotation: 12deg;
+}
+
+#gallery img:nth-child(9) {
+    top: 340px;
+    left: 70%;
+    --rotation: -6deg;
+}
+
+#gallery img:nth-child(10) {
+    top: 380px;
+    left: 90%;
+    --rotation: 7deg;
+}
+
+#gallery img:nth-child(11) {
+    top: 420px;
+    left: 15%;
+    --rotation: -9deg;
+}
+
+#gallery img:nth-child(12) {
+    top: 460px;
+    left: 35%;
+    --rotation: 6deg;
+}
+
+#gallery img:nth-child(13) {
+    top: 500px;
+    left: 55%;
+    --rotation: -11deg;
+}
+
+#gallery img:nth-child(14) {
+    top: 540px;
+    left: 75%;
+    --rotation: 9deg;
+}
+
+#gallery img:nth-child(15) {
+    top: 580px;
+    left: 5%;
+    --rotation: -4deg;
+}
+
+#gallery img:nth-child(16) {
+    top: 620px;
+    left: 25%;
+    --rotation: 5deg;
+}

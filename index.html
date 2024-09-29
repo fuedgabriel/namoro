@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Contador de Relacionamento</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Link para o Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>Nosso Amor</h1>
+        <div class="counter">
+            <h2>Estamos juntos há:</h2>
+            <p id="timeCounter">Calculando...</p>
+        </div>
+        <div class="date-input">
+            <label for="startDate">Data de Início do Relacionamento:</label>
+            <input type="date" id="startDate">
+            <button class="btn" onclick="startCounting()">Iniciar Contagem</button>
+        </div>
+        <div class="upload-section">
+            <h2>Nossas Memórias</h2>
+            <input type="file" id="imageUpload" accept="image/*" multiple>
+            <button class="btn" onclick="uploadImages()">Fazer Upload das Imagens</button>
+            <div id="gallery"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
